@@ -38,10 +38,12 @@ export default function Product() {
                             <span>{product.category}</span>
                             <span>${product.price}</span>
                         </div>
-                        <div className="button-container">
-                            <button>ADD TO BAG</button>
-                        </div>
+
                     </div>
+
+                </div>
+                <div className="button-container">
+                    <button>ADD TO BAG</button>
                 </div>
                 <div className="product-bottom-details-container">
                     <span>{product.description}</span>
