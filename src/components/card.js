@@ -7,8 +7,6 @@ export default function Card({ item }) {
     const history = useHistory();
 
     const handleProductRoute = (item) => {
-
-        console.log("item clicked", item)
         history.push({
             pathname: `/product/${item.id}`,
 

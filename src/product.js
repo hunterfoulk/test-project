@@ -12,7 +12,7 @@ export default function Product() {
 
     async function fetchProduct() {
         let id = match.params.id
-        console.log("ID", id)
+
         const response = await getProductItem(id);
         setProduct(response)
         setLoading(false)
