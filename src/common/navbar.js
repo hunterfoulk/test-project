@@ -8,7 +8,7 @@ export default function Navbar() {
     //Re routes back to the homepage when the navbar text is clicked
     const handleHomeRoute = () => {
         history.push({
-            pathname: `/`,
+            pathname: `/test-project`,
 
         });
     }
