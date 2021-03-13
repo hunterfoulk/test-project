@@ -1,0 +1,52 @@
+.card {
+  min-height: 260px;
+  min-width: 250px;
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  box-shadow: 1px 1px 10px 0px #0000004f;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .image-container {
+    width: 60%;
+    height: 68%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card-title-container {
+    // background-color: red;
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-price-container {
+    // background-color: red;
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+// Cards Section Media Queries //
+@media (max-width: 800px) {
+  .card {
+    height: 320px;
+    width: 320px;
+  }
+}
