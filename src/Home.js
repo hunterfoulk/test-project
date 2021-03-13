@@ -72,7 +72,6 @@ function Home() {
 
     const handleCategoryChange = async (category) => {
 
-        console.log("fired", category)
 
         setSearchLoading(true)
 
