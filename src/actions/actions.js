@@ -5,7 +5,12 @@ import axios from "axios";
 export default function ProductActions() {
 
 
-    let headers = {};
+
+    // let headers = {};
+    const headers = {
+        'Content-Type': 'text/plain'
+    };
+
     const baseURL = process.env.REACT_APP_GET_URL;
     const API = axios.create({
         baseURL: baseURL,

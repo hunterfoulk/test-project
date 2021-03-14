@@ -77,29 +77,33 @@
   //   padding: 5px;
   .product {
     display: flex;
-    // background-color: red;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     width: 60%;
-    height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 1200px;
     padding: 5px;
+    min-height:700px;
+    // background-color:orange;
 
     .product-top {
       display: flex;
       flex-direction: row;
       align-items: center;
+    // background-color:green;
+    width:100%;
+      min-height:50%;
       .product-image-container {
         width: 50%;
+        max-height:80%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
+    
         img {
-          width: 90%;
-          height: 90%;
+          width: 80%;
         }
       }
       .product-right-details-container {
@@ -108,7 +112,8 @@
         align-items: center;
         justify-content: space-between;
         width: 50%;
-        height: 90%;
+         height:85%;
+
         .product-title-container {
           display: flex;
           text-align: center;
@@ -135,10 +140,22 @@
     .button-container {
       display: flex;
       justify-content: center;
-      width: 50%;
+      width: 100%;
       margin-top: 10px;
       margin-bottom: 10px;
-      button {
+      .button-container-left{
+        display:flex;
+        justify-content: center;
+        width:50%;
+        // background-color:red;
+      }
+      .button-container-right{
+        display:flex;
+        width:50%;
+        justify-content: center;
+        // background-color:yellow;;
+
+           button {
         background-color: rgba(0, 0, 0, 0.8784313725490196);
         color: white;
         padding: 10px;
@@ -148,6 +165,9 @@
         cursor: pointer;
         outline: none;
       }
+      }
+
+   
     }
   }
   .product-bottom-details-container {
@@ -155,6 +175,8 @@
     width: 100%;
     margin-top: 20px;
     height: auto;
+    text-align: center;
+   justify-content: center;
   }
 }
 
@@ -298,7 +320,8 @@
         .product-image-container {
           justify-content: center;
           width: 85%;
-          height: 100%;
+          height: auto;
+        
           img {
             margin-left: 0px;
             width: 70%;
@@ -306,10 +329,20 @@
           }
         }
       }
+     
       .product-bottom-details-container {
         span {
           text-align: center;
           padding: 10px;
+        }
+      }
+       .button-container{
+        // background-color:black;
+        .button-container-left{
+          display:none;
+        }
+        .button-container-right{
+        //  background-color:orange;
         }
       }
     }
