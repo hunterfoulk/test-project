@@ -43,7 +43,13 @@ export default function Product() {
 
                 </div>
                 <div className="button-container">
-                    <button>ADD TO BAG</button>
+                    <div className="button-container-left">
+
+                    </div>
+                    <div className="button-container-right">
+                        <button>ADD TO BAG</button>
+
+                    </div>
                 </div>
                 <div className="product-bottom-details-container">
                     <span>{product.description}</span>
